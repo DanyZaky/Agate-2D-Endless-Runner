@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class CameraMoveController : MonoBehaviour
 {
-
     [Header("Position")]
     public Transform player;
-    public float horizontalOffset;
+    public float horizOffset;
 
     private void Update()
     {
         Vector3 newPosition = transform.position;
-        newPosition.x = player.position.x + horizontalOffset;
+        newPosition.x = player.position.x + horizOffset;
         transform.position = newPosition;
     }
 }
