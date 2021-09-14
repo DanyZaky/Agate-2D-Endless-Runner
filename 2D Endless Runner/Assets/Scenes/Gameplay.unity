@@ -366,7 +366,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 611695805}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.82, y: 3.02, z: 0}
+  m_LocalPosition: {x: -7, y: -2.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -569,6 +569,10 @@ MonoBehaviour:
   - {fileID: 7125597917351813551, guid: 39b85385276804641bbb102a534188b2, type: 3}
   - {fileID: 771659671178997012, guid: dc18346c5db31b84b84a0ce7d4cb4725, type: 3}
   terrainTemplateWidth: 8.89
+  earlyTerrainTemplate:
+  - {fileID: 871833641746876940, guid: 2c003e099c4bfd0409ee9b3c84c240e5, type: 3}
+  - {fileID: 871833641746876940, guid: 2c003e099c4bfd0409ee9b3c84c240e5, type: 3}
+  - {fileID: 871833641746876940, guid: 2c003e099c4bfd0409ee9b3c84c240e5, type: 3}
   gameCamera: {fileID: 519420031}
   areaStartOffset: -10
   areaEndOffset: 5

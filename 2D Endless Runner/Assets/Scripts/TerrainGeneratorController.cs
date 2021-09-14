@@ -7,10 +7,14 @@ public class TerrainGeneratorController : MonoBehaviour
     private List<GameObject> spawnedTerrain;
 
     private float lastGeneratedPositionX;
+    private float lastRemovePositionX;
 
     [Header("Templates")]
     public List<TerrainTemplateController> terrainTemplates;
     public float terrainTemplateWidth;
+
+    [Header("Force Early Template")]
+    public List<TerrainTemplateController> earlyTerrainTemplate;
 
     [Header("Generator Area")]
     public Camera gameCamera;
@@ -24,6 +28,13 @@ public class TerrainGeneratorController : MonoBehaviour
         spawnedTerrain = new List<GameObject>();
 
         lastGeneratedPositionX = GetHorizontalPositionStart();
+        lastRemovePositionX = lastGeneratedPositionX - terrainTemplateWidth;
+
+        foreach (TerrainTemplateController terrain in earlyTerrainTemplate)
+        {
+            GenerateTerrain(lastGeneratedPositionX, terrain);
+            lastGeneratedPositionX += terrainTemplateWidth;
+        }
 
         while (lastGeneratedPositionX < GetHorizontalPositionEnd())
         {
@@ -40,15 +51,50 @@ public class TerrainGeneratorController : MonoBehaviour
             GenerateTerrain(lastGeneratedPositionX);
             lastGeneratedPositionX += terrainTemplateWidth;
         }
+
+        while (lastRemovePositionX + terrainTemplateWidth < GetHorizontalPositionStart())
+        {
+            lastRemovePositionX += terrainTemplateWidth;
+            RemoveTerrain(lastRemovePositionX);
+        }
     }
 
     private void GenerateTerrain(float posX, TerrainTemplateController forceterrain = null)
     {
-        GameObject newTerrain = Instantiate(terrainTemplates[Random.Range(0, terrainTemplates.Count)].gameObject, transform);
+        GameObject newTerrain = null;
+
+        if (forceterrain == null)
+        {
+            newTerrain =  Instantiate(terrainTemplates[Random.Range(0, terrainTemplates.Count)].gameObject, transform);
+        }
+        else
+        {
+            newTerrain = Instantiate(forceterrain.gameObject, transform);
+        }
 
         newTerrain.transform.position = new Vector2(posX, 0f);
 
         spawnedTerrain.Add(newTerrain);
+    }
+
+    private void RemoveTerrain(float posX)
+    {
+        GameObject terrainToRemove = null;
+
+        foreach (GameObject item in spawnedTerrain)
+        {
+            if (item.transform.position.x == posX)
+            {
+                terrainToRemove = item;
+                break;
+            }
+        }
+
+        if(terrainToRemove != null)
+        {
+            spawnedTerrain.Remove(terrainToRemove);
+            Destroy(terrainToRemove);
+        }
     }
 
     private float GetHorizontalPositionStart()
