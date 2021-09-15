@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class CharaSoundController : MonoBehaviour
 {
-    public AudioClip jump;
+    public AudioClip jump, scoreHighlight;
     private AudioSource audioPlayer;
+
+
+    public void PlayScoreHighlight()
+    {
+        audioPlayer.PlayOneShot(scoreHighlight);
+    }
 
     private void Start()
     {

@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\CameraMoveController.cs" />
     <Compile Include="Assets\Scripts\CharacterMoveController.cs" />
     <Compile Include="Assets\Scripts\CharaSoundController.cs" />
+    <Compile Include="Assets\Scripts\SceneController.cs" />
     <Compile Include="Assets\Scripts\ScoreController.cs" />
     <Compile Include="Assets\Scripts\ScoreData.cs" />
     <Compile Include="Assets\Scripts\TerrainGeneratorController.cs" />
