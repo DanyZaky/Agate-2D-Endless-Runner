@@ -67,8 +67,12 @@
     <Compile Include="Assets\Scripts\CameraMoveController.cs" />
     <Compile Include="Assets\Scripts\CharacterMoveController.cs" />
     <Compile Include="Assets\Scripts\CharaSoundController.cs" />
+    <Compile Include="Assets\Scripts\ScoreController.cs" />
+    <Compile Include="Assets\Scripts\ScoreData.cs" />
     <Compile Include="Assets\Scripts\TerrainGeneratorController.cs" />
     <Compile Include="Assets\Scripts\TerrainTemplateController.cs" />
+    <Compile Include="Assets\Scripts\UIGameoverController.cs" />
+    <Compile Include="Assets\Scripts\UIScoreController.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Z:/Github Repo/Agate-2D-Endless-Runner/2D Endless Runner/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

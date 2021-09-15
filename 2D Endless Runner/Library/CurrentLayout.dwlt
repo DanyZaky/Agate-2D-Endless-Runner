@@ -111,8 +111,8 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 683, y: 498}
-  m_MaxSize: {x: 14004, y: 14048}
+  m_MinSize: {x: 683, y: 348}
+  m_MaxSize: {x: 12008, y: 8048}
   vertical: 0
   controlID: 12
 --- !u!114 &6
@@ -136,8 +136,8 @@ MonoBehaviour:
     y: 0
     width: 1094
     height: 731
-  m_MinSize: {x: 406, y: 498}
-  m_MaxSize: {x: 10002, y: 14048}
+  m_MinSize: {x: 406, y: 348}
+  m_MaxSize: {x: 8006, y: 8048}
   vertical: 1
   controlID: 13
 --- !u!114 &7
@@ -239,15 +239,15 @@ MonoBehaviour:
     y: 394
     width: 1094
     height: 337
-  m_MinSize: {x: 232, y: 274}
-  m_MaxSize: {x: 10002, y: 10024}
-  m_ActualView: {fileID: 17}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 17}
   - {fileID: 18}
   - {fileID: 19}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -385,7 +385,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: d4fbffff7a0c00009a0c0000
+      m_ExpandedIDs: fcdaffff0ce3ffff4ce5ffff9ee9ffff74eaffffd4fbffff7a0c00009a0c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -440,9 +440,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 11.395227, y: 0.8116702, z: -0.17258376}
+    m_Target: {x: 309.49377, y: 170.02008, z: -3.1438684}
     speed: 2
-    m_Value: {x: 11.395227, y: 0.8116702, z: -0.17258376}
+    m_Value: {x: 309.49377, y: 170.02008, z: -3.1438684}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -474,9 +474,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 34.42425
+    m_Target: 330.64386
     speed: 2
-    m_Value: 34.42425
+    m_Value: 330.64386
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -616,19 +616,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: Z:\Github Repo\Agate-2D-Endless-Runner\2D Endless Runner
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 0e0c0000
-    m_LastClickedID: 3086
+    m_SelectedIDs: a40a0000
+    m_LastClickedID: 2724
     m_ExpandedIDs: 000000006209000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -682,10 +682,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: fcdaffff
+    m_LastClickedInstanceID: -9476
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c62300000e430000000000006a30000062300000
+    m_ExpandedInstanceIDs: c62300000e4300006a3000006230000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -766,7 +766,7 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 3226
+  m_LastSelectedObjectID: -9476
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
